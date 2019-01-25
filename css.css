@@ -1,0 +1,342 @@
+.mais {
+
+  text-align: center;
+  padding: 20px;
+  background-image: url("img/harina-de-maíz.jpg");
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url("img/harina-de-maíz.jpg");
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+	transition: margin-left .5s;
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+img.grande{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px; height: 600px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: inset 0 0 0 25px #010101;
+  width: 1300px; height: 600px;
+  border: 6px gray;
+  padding: 6px;
+  margin: 6px;
+}
+
+h1.center {
+  font-family:  Fantasy;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  color: white;
+   font-size: 50px;
+   animation-duration: 4s;
+   -webkit-animation-name: lettre;
+  -webkit-animation-duration: 4s;
+  animation-name: lettre;
+
+}
+
+@-webkit-keyframes lettre {
+  0%   {color: GhostWhite;}
+  25%  {color: LavenderBlush;}
+  50%  {color: Azure;}
+  100% {color: Snow;}
+}
+
+/* Standard syntax */
+@keyframes lettre {
+  0%   {color: DimGray;}
+  25%  {color: Gray;}
+  50%  {color: black;}
+  100% {color: GhostWhite;}
+}
+
+h1.center1 {
+  font-family:  Fantasy;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 90%);
+}
+body.ac {
+  background-color: GhostWhite;
+}
+
+button.ac {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 280%);
+  border-radius:  8px;
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -280%);
+}
+
+input[type=text]:focus {
+  width: 50%;
+}
+
+
+.coupon {
+  border: 5px dotted #bbb; /* Dotted border */
+  width: 80%;
+  border-radius: 15px; /* Rounded border */
+  margin: 0 auto; /* Center the coupon */
+  max-width: 600px;
+}
+
+.container {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.expire {
+  color: red;
+}
+
+.slider {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+}
+
+@keyframes cambio {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+   width: auto;
+
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 250px;
+  right: 480px;
+  color: white;
+  background: black;
+  opacity: 0.50;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 16px;
+}
+
+.container img {
+  height: 350px;
+  width: 50%;
+}
