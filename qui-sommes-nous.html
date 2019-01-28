@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1 {
+  text-align: center;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<title>QUI SOMMES NOUS?</title>
+<body>
+
+<h1>Qui sommes nous</h1>
+
+<div class="responsive">
+  <div class="gallery">
+
+<h2 style="text-align:center">Étudiant DUT Informatique</h2>
+
+<div class="card">
+  <img src="img/user.png" alt="Igor" style="width:100%">
+  <h1>Igor Berroteran</h1>
+  <p class="title">front-end</p>
+  <p>Université Lyon 1</p>
+  <p><button>Contact</button></p>
+</div>
+</div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+
+<h2 style="text-align:center">Étudiant DUT Informatique</h2>
+
+<div class="card">
+  <img src="img/user.png" alt="Laurent" style="width:100%">
+  <h1>Laurent Grignon</h1>
+  <p class="title">back-end</p>
+  <p>Université Lyon 1</p>
+  <p><button>Contact</button></p>
+
+</div>
+</div>
+
+
+</div>
+
+
+</body>
+</html>

@@ -2,38 +2,42 @@
 <html>
 <head>
 <link rel="STYLESHEET" type="text/css" href="css.css">
-<link rel="icon" href="favi.ico" />
 <style>
+button {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+       }
+       .btn2 {
+  background-color: #000;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: nones;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-left: 400px;
+  margin-right: auto;
+  width: 40%;
+}
+h2, h5
+{
+  text-align: center;
+}
 </style>
 </head>
 <body>
 
 <header>
-  <div class="container">
-  <img src="img/giphy (2).gif" alt="Nature" style="width:100%;">
-  <div class="text-block">
-    <h4><center>Livres I&L</center></h4>
-    <p>Les livres que votre bibliothèque aime</p>
-  </div>
-</div>
-</div>
- <input type="text" class="Recherche" placeholder="Recherche des livres.."></input>
-</div>
 
-<div class="topnav">
-  <a href="accueil.html">Chercher</a>
-  <a href="qui-sommes-nous.html">Qui sommes-nous?</a>
-  <a href="liste-de-produits.html">Livres</a>
-  <a href="technique.html">Details techniques</a>
-  <a href="pannier.html" style="float:right"><img src="img/put-in-cart.png"></a>
-</div>
     <!--premier vitrine-->
-<div class="row">
-  <div class="leftcolumn">
+
 
     <div class="card">
-      <h2>Livres de littérature de différentes catégories</h2>
-      <h5>Des livres pour enrichir vos connaissances</h5>
+      <h2>Liste de livres</h2>
+      <h5>Livres de littérature de différentes catégories</h5>
       <div class="slider">
             <ul>
                 <li>     <!--premier galerie-->
@@ -220,20 +224,8 @@
 <div class="clearfix"></div>
 
 </li>
-            </ul>
-        </div>
-    </div>
-    <!--deuxiem vitrine-->
-    <div class="card">
-      <h2>Livres de langues étrangères</h2>
-      <h5>Apprendre des langues avec nos livres</h5>
-
-
-
-  <div class="slider">
-            <ul>
                 <li>     <!--premier galerie-->
-                    <p></p>
+
  <div class="responsive">
   <div class="gallery">
    <a target="produit.html" " href="produit.html">
@@ -413,33 +405,23 @@
   </div>
 </div>
 
-<div class="clearfix"></div>
-
 </li>
             </ul>
+            <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="liste-de-produits.html">1</a>
+  <a href="liste-de-produits.html">2</a>
+  <a href="liste-de-produits.html">3</a>
+  <a href="liste-de-produits.html">4</a>
+  <a href="liste-de-produits.html">5</a>
+  <a href="liste-de-produits.html">6</a>
+  <a href="liste-de-produits.html">&raquo;</a>
+</div>
         </div>
+ <a href="ex.html"><input  type="submit" value="Rétourner" class="btn2"></a>
     </div>
   </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2 center>Offre du jour</h2>
-      <a href="pannier.html"><img src="img/neruda.jpg" class="fakeimg"></a>
-      <p center>40% de reduction sur tous les livres de poésie et philosophie</p>
-    </div>
-    <div class="card">
-      <h3>Notre colection</h3>
-      <a href="liste-de-produits.html"><img src="img/livres.jpg" class="fakeimg"></a>
-    </div>
-    <div class="card">
-      <h3>Trouvez nous sur Facebook</h3>
-      <p>Fanpage</p>
-      <a href="https://facebook.com"><img src="img/images.png" class="fakeimg"></a>
-    </div>
-  </div>
-</div>
 
- <div class="footer">
- <h2><a href="products.html" style="color:#fff;">Offre du jour</a></h2>
-</div>
+
 </body>
 </html>
